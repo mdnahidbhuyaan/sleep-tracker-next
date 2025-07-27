@@ -50,5 +50,6 @@ export default async function Navbar() {
         </div>
       </div>
     </nav>
+      
   );
 }
