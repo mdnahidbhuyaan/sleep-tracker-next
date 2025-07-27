@@ -3,7 +3,6 @@ import AverageSleep from "@/components/AverageSleep";
 import BestWorstSleep from "@/components/BestWorstSleep";
 import Guest from "@/components/Guest";
 import RecordChart from "@/components/RecordChart";
-import RecordHistory from "@/components/RecordHistory";
 import { currentUser } from "@clerk/nextjs/server";
 export default async function Home() {
   const  user = await currentUser();
@@ -67,7 +66,6 @@ export default async function Home() {
       {/* Placeholder for SleepHistory */}
       <div className='max-w-7xl mx-auto'>
         {/* <RecordHistory /> */}
-        <RecordHistory/>
       </div>
     </main>
   );
